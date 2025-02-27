@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character encoding, responsive design, and SEO -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive -->
+    <meta name="author" content="watch"> <!-- Specifies the author of the website -->
+    <meta name="description" content="This e-commerce website is selling all types of watches"> <!-- Provides a brief description of the website for SEO -->
+    <meta name="keywords" content="html,css,js"> <!-- Keywords for search engine optimization -->
+    <meta http-equiv="refresh" content="1.2s"> <!-- Refreshes the page every 1.2 seconds (useful for dynamic content updates) -->
+    <title>Review Page</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Links to the external CSS file for styling -->
+    <script src="../js/script.js"></script> <!-- Links to the external JavaScript file for interactivity -->
+     <!-- interal css -->
+    <style>
+        /* Internal CSS for styling the body and popup */
+        body {
+            background-color: antiquewhite; 
+            box-sizing: border-box; /* Ensures padding and border are included in element dimensions */
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+            padding-top: 10px; /* Adds padding at the top of the page */
+        }
+
+        /* Popup message box styling */
+        .popup-content {
+            background-color: white; 
+            padding: 20px; /* Adds padding inside the popup */
+            border-radius: 8px; /* Rounds the corners of the popup */
+            text-align: center; /* Centers the text inside the popup */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to the popup */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <!-- The navigation bar includes a date/time display and links to different pages of the website. -->
+    <nav>
+        <div id="datetime"></div> <!-- Placeholder for displaying the current date and time (populated via JavaScript) -->
+        <ul>
+            <li><a href="../index.html">Home</a></li> <!-- Link to the home page -->
+            <li><a href="aboutUs.html">About Us</a></li> <!-- Link to the about us page -->
+            <li><a href="blog.html">Blog</a></li> <!-- Link to the blog page -->
+            <li><a href="analog.html" class="active">Products</a></li> <!-- Link to the products page (currently active) -->
+            <li><a href="research.html">Research</a></li> <!-- Link to the research page -->
+            <li><a href="contactUs.html">Contact Us</a></li> <!-- Link to the contact us page -->
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <!-- This container holds the review form and feedback message. -->
+    <div id="contact-us-content" style="font-family: Arial, sans-serif;"> <!--inline css-->
+        <h1>Rate & review us!</h1> <!-- Main heading for the review page -->
+        <p>We would love to hear your experience! Please fill out the review form below..</p> <!-- Subheading for the review page -->
+        <a href="javascript:history.back()" class="back-button" title="Go back">
+            Back <!-- Back button to navigate to the previous page -->
+        </a>
+
+        <!-- Review Form -->
+        <!-- The form collects user feedback and includes fields for name, email, phone, rating, and review message. -->
+        <form onsubmit="showPopup(); return false;">
+            <label for="name">Name:</label> <!-- Label for the name input field -->
+            <input type="text" id="name" name="name" placeholder="Enter your name" required> <!-- Name input field -->
+
+            <label for="email">Email:</label> <!-- Label for the email input field -->
+            <input type="email" id="email" name="email" placeholder="Enter your email"> <!-- Email input field -->
+
+            <label for="number">Phone:</label> <!-- Label for the phone input field -->
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="^\d{10}$"
+                inputmode="numeric" maxlength="10" oninput="validatePhone(this)"> <!-- Phone input field with validation -->
+
+            <label for="rating">Rating (1-5):</label> <!-- Label for the rating input field -->
+            <input type="number" id="rating" name="rating" min="1" max="5" value="1" required> <!-- Rating input field -->
+
+            <label for="message">Leave your review:</label> <!-- Label for the review textarea -->
+            <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea> <!-- Review textarea -->
+
+            <button type="submit" class="submit-button">Send</button> <!-- Submit button for the form -->
+        </form>
+    </div>
+
+    <!-- Popup Div -->
+    <!-- This popup appears when the form is successfully submitted. -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p class="popup-message">Thank you! Your review form has been sent successfully.</p> <!-- Popup message -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <!-- The footer includes links to different sections of the website, payment methods, and social media icons. -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4> <!-- Title for the company links section -->
+                <ul>
+                    <li><a href="../index.html">Home</a></li> <!-- Link to the home page -->
+                    <li><a href="aboutUs.html">About Us</a></li> <!-- Link to the about us page -->
+                    <li><a href="blog.html">Blog</a></li> <!-- Link to the blog page -->
+                    <li><a href="analog.html">Products</a></li> <!-- Link to the products page -->
+                    <li><a href="research.html">Research</a></li> <!-- Link to the research page -->
+                    <li><a href="contactUs.html">Contact</a></li> <!-- Link to the contact page -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4> <!-- Title for the payment methods section -->
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment"> <!-- eSewa payment method icon -->
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment"> <!-- Khalti payment method icon -->
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4> <!-- Title for the watches section -->
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li> <!-- Link to analog watches -->
+                    <li><a href="digital.html">Digital Watches</a></li> <!-- Link to digital watches -->
+                    <li><a href="smart.html">Smart Watches</a></li> <!-- Link to smart watches -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4> <!-- Title for the social media section -->
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram"> <!-- Instagram icon -->
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook"> <!-- Facebook icon -->
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)"> <!-- Twitter (X) icon -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p> <!-- Copyright notice -->
+    </footer>
+
+    <!-- JavaScript Functions -->
+    <script>
+        // Function to show the popup and background overlay
+        function showPopup() {
+            const popup = document.getElementById("popup");
+            popup.style.display = "flex";  // Show the popup with overlay
+
+            // Close the popup after 2 seconds
+            setTimeout(function () {
+                popup.style.display = "none";  // Hide the popup
+                location.reload();  // Refresh the page
+            }, 2000);
+        }
+
+        // Function to validate phone number input
+        function validatePhone(input) {
+            // Remove any non-digit characters
+            input.value = input.value.replace(/\D/g, '');
+
+            // Limit to 10 digits
+            if (input.value.length > 10) {
+                input.value = input.value.slice(0, 10);
+            }
+        }
+    </script>
+</body>
+
+</html>

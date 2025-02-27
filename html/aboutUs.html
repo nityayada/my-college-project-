@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata and linking external CSS -->
+  <meta charset="UTF-8"> <!-- Character encoding for the document -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the site is responsive -->
+  <meta name="author" content="watch"> <!-- Author of the website -->
+  <meta name="description" content="This e-commerce website is selling all types of watches">
+  <!-- Description for SEO -->
+  <meta name="keywords" content="html,css,js"> <!-- Keywords for SEO -->
+  <!-- Remove or adjust the refresh meta tag as it refreshes the page every 1.2 seconds, which is unnecessary -->
+  <meta http-equiv="refresh" content="1.2s">
+  <title>Our Team</title> <!-- Title of the webpage -->
+  <!-- Linking external CSS file for styling -->
+  <link rel="stylesheet" href="../css/style.css"> <!-- Links to the external CSS file -->
+  <script src="../js/script.js"></script> <!-- Links to the external JavaScript file -->
+
+  <!-- interal css -->
+  <style>
+    /* Link styling - remove default underline and color */
+    a:link {
+      color: none;
+      text-decoration: none;
+    }
+
+    /* Hover effect for links */
+    a:hover {
+      color: black;
+      transform: scale(1.1);
+      /* Slightly enlarge the link on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <div id="datetime"></div> <!-- Placeholder for displaying date and time -->
+    <ul>
+      <!-- Navigation links -->
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="aboutUs.html" class="active">About Us</a></li> <!-- Active link for the current page -->
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="analog.html">Products</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main container for the About Us page -->
+  <div id="about-us-container">
+    <!-- Website Header Section -->
+    <header>
+      <div class="aboutheader">
+        <h1>Meet Our Team</h1> <!-- Heading for the team section -->
+        <p>We are a team of four passionate individuals who believe in blending technology with luxury. With a shared
+          interest in watches, we designed this e-commerce website to cater to watch enthusiasts.</p>
+        <!-- Team description -->
+      </div>
+    </header>
+
+    <!-- Team Section -->
+    <div style="margin-left: 150px;">
+      <!-- First row of team members -->
+      <section class="team">
+        <!-- Team Member 1 -->
+        <div class="member">
+          <a href="asim CV.html" target="_self"> <!--link for the asim cv page-->
+            <img src="../img/asim.png" alt="Asim Pokhrel - Team Leader"> <!-- Image for Asim -->
+            <h2>Asim Pokhrel</h2> <!--team member name -->
+            <p>Team Leader</p>
+            <p>Content Creator, wrote descriptions, blogs, and other textual elements.</p> <!-- Role description -->
+          </a>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="member">
+          <a href="aditya CV.html" target="_self"> <!--link for the aditya cv page-->
+            <img src="../img/aditya.png" alt="Aditya Uprety - Team Member"> <!-- Image for Aditya -->
+            <h2>Aditya Uprety</h2> <!--team member name -->
+            <p>Team Member</p>
+            <p>Designer, responsible for coding and overall functionality.</p> <!-- Role description -->
+          </a>
+        </div>
+      </section>
+
+      <!-- Second row of team members -->
+      <section class="team">
+        <!-- Team Member 3 -->
+        <div class="member">
+          <a href="nitya CV.html" target="_self"> <!--link for the nitya cv page-->
+            <img src="../img/nitya.png" alt="Nitya Yadav - Team Member"> <!-- Image for Nitya -->
+            <h2>Nitya Yadav</h2> <!--team member name -->
+            <p>Team Member</p>
+            <p>Focused on the visual and layout aspects of the site and some portion of coding.</p>
+            <!-- Role description -->
+          </a>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="member">
+          <a href="Shisir Cv.html" target="_self"> <!--link for the shisir cv page-->
+            <img src="../img/sishir.png" alt="Shisir Satgaunwa - Team Member"> <!-- Image for Shisir -->
+            <h2>Shisir Chaudhary</h2> <!--team member name -->
+            <p>Team Member</p>
+            <p>Researcher, gathered insights and references from existing platforms.</p> <!-- Role description -->
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Company Links -->
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li> <!--link for the index page-->
+          <li><a href="aboutUs.html">About Us</a></li> <!--link for the aboutus page-->
+          <li><a href="blog.html">Blog</a></li> <!--link for the blog page-->
+          <li><a href="analog.html">Products</a></li> <!--link for the products page-->
+          <li><a href="research.html">Research</a></li> <!--link for the research page-->
+          <li><a href="contactUs.html">Contact</a></li> <!--link for the contact us page-->
+        </ul>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="footer-section">
+        <h4>Payment Method</h4>
+        <div class="icons">
+          <a href="https://esewa.com.np"
+            target="_blank"><!--through this we can go the esewa payment apps for the payments -->
+            <img src="../img/eswea.jpg" alt="eSewa Payment"> <!-- eSewa payment icon -->
+          </a>
+          <a href="https://khalti.com"
+            target="_blank"><!--through this we can go the khalti payment apps for the payments -->
+            <img src="../img/khalti.png" alt="Khalti Payment"> <!-- Khalti payment icon -->
+          </a>
+        </div>
+      </div>
+
+      <!-- Watch Categories -->
+      <div class="footer-section">
+        <h4>Watches</h4>
+        <ul>
+          <li><a href="analog.html">Analog Watches</a></li>
+          <!--through this we can go the analog watches product page-->
+          <li><a href="digital.html">Digital Watches</a></li>
+          <!--through this we can go the digital watches product page-->
+          <li><a href="smart.html">Smart Watches</a></li> <!--through this we can go the smart watches product page-->
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="icons">
+          <a href="https://www.instagram.com" target="_blank">
+            <!--through this we can go the our website instagram site -->
+            <img src="../img/insta.png" alt="Instagram"> <!-- Instagram icon -->
+          </a>
+          <a href="https://www.facebook.com" target="_blank">
+            <!--through this we can go the our website facebook site -->
+            <img src="../img/facebook.png" alt="Facebook"> <!-- Facebook icon -->
+          </a>
+          <a href="https://twitter.com" target="_blank"> <!--through this we can go the our website twitter site -->
+            <img src="../img/x.png" alt="Twitter (X)"> <!-- Twitter (X) icon -->
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright Notice -->
+    <p class="copyright">Â© 2025 Website. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

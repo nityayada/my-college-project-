@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and linking external CSS -->
+    <!-- This section includes meta tags for character encoding, viewport settings, author, description, and keywords. -->
+    <!-- It also links the external CSS file and includes a script for JavaScript functionality. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="watch">
+    <meta name="description" content="This e-commerce website is selling all types of watches">
+    <meta name="keywords" content="html,css,js">
+    <meta http-equiv="refresh" content="1.2s"> <!-- Refreshes the page every 1.2 seconds (useful for dynamic content updates) -->
+    <title>Research & Comparisons</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Links to the external CSS file for styling -->
+    <script src="../js/script.js"></script> <!-- Links to the external JavaScript file for interactivity -->
+     <!-- interal css -->
+    <style>
+        /* Internal CSS for styling the body and header elements */
+        body {
+            background-color: #f9f9f9; /* Light gray background for the entire page */
+            color: #333;
+        }
+
+        .header h1 {
+            margin: 0; /* Removes default margin for the header title */
+            font-size: 40px; 
+            color: white; 
+        }
+
+        .header p {
+            margin: 10px 0 0; /* Adds spacing above the paragraph */
+            font-size: 19px; /* Medium font size for the subheading */
+            color: white; 
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <!-- The nav bar includes a date/time display and links to different pages of the website. -->
+    <nav>
+        <div id="datetime"></div> <!-- Placeholder for displaying the current date and time (populated via JavaScript) -->
+        <ul>
+            <li><a href="../index.html">Home</a></li> <!-- Link to the home page -->
+            <li><a href="aboutUs.html">About Us</a></li> <!-- Link to the about us page -->
+            <li><a href="blog.html">Blog</a></li> <!-- Link to the blog page -->
+            <li><a href="analog.html">Products</a></li> <!-- Link to the products page -->
+            <li><a href="research.html" class="active">Research</a></li> <!-- Link to the research page (currently active) -->
+            <li><a href="contactUs.html">Contact Us</a></li> <!-- Link to the contact us page -->
+        </ul>
+    </nav>
+
+    <!-- Main content container for the research page -->
+    <!-- This section contains the header and comparison boxes for different website comparisons. -->
+    <div id="research-container" style="font-family: Arial, sans-serif;">
+        <div class="header">
+            <h1>Research & Comparisons</h1> <!-- Main heading for the research page -->
+            <p>Explore how we draw inspiration from and improve upon industry standards</p> <!-- Subheading for the research page -->
+        </div>
+
+        <div class="container">
+            <!-- First comparison box -->
+            <!-- This box compares the Rolex website with our website, highlighting improvements in consistency. -->
+            <div class="comparison-box">
+                <h3>First Comparison</h3> <!-- Title for the first comparison -->
+                <div class="comparison-images-box">
+                    <div class="comparison-images">
+                        <a href="https://www.rolex.com/en-us/watches/new-watches" target="_blank">
+                            <img src="../img/rolexscreenshot.png" alt="Example Website Screenshot"> <!-- Screenshot of the Rolex website -->
+                        </a>
+                        <p class="comparison-images-p">Example Website</p> <!-- Label for the example website screenshot -->
+                    </div>
+                    <div class="comparison-images">
+                        <a href="../index.html" target="_blank">
+                            <img src="../img/home page.png" alt="Our Website Screenshot"> <!-- Screenshot of our website -->
+                        </a>
+                        <p class="comparison-images-p">Our Website</p> <!-- Label for our website screenshot -->
+                    </div>
+                </div>
+                <!-- Table for the first comparison -->
+                <p class="comparison-box-p">This comparison highlights the differences between the Rolex Watch and Our website</p> <!-- Description of the comparison -->
+                <div class="comparison-section">
+                    <h2 class="section-title">Feature Comparison</h2> <!-- Title for the feature comparison section -->
+                    <p class="section-content">This section highlights the features we found on other websites, the inspiration we took, and how we improved them on our platform.</p> <!-- Description of the feature comparison -->
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th> <!-- Column for the feature being compared -->
+                                <th>Other Website</th> <!-- Column for the other website's implementation -->
+                                <th>Our Website</th> <!-- Column for our website's implementation -->
+                                <th>Improvement</th> <!-- Column for the improvements made -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Consistency</td> <!-- Feature being compared -->
+                                <td>The navigation menu is not consistently styled across the page</td> <!-- Other website's issue -->
+                                <td>The navigation menu is consistently styled across the page</td> <!-- Our website's solution -->
+                                <td>Make it easier for users to explore</td> <!-- Improvement made -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Second comparison box -->
+            <!-- This box compares the Just Watches website with our website, highlighting improvements in typography. -->
+            <div class="comparison-box">
+                <h3>Second Comparison</h3> <!-- Title for the second comparison -->
+                <div class="comparison-images-box">
+                    <div class="comparison-images">
+                        <a href="https://www.justwatches.com/?srsltid=AfmBOooMBvm_FNQ2XHZqvql1B5dJPzL-8zR8rdN_QbnNFQLCT2qfPdX2" target="_blank">
+                            <img src="../img/justwatches.png" alt="Example Website Screenshot"> <!-- Screenshot of the Just Watches website -->
+                        </a>
+                        <p class="comparison-images-p">Example Website</p> <!-- Label for the example website screenshot -->
+                    </div>
+                    <div class="comparison-images">
+                        <a href="../index.html" target="_blank">
+                            <img src="../img/home page.png" alt="Our Website Screenshot"> <!-- Screenshot of our website -->
+                        </a>
+                        <p class="comparison-images-p">Our Website</p> <!-- Label for our website screenshot -->
+                    </div>
+                </div>
+                <!-- Table for the second comparison -->
+                <p class="comparison-box-p">This comparison highlights the differences between the Just Watches and Our website</p> <!-- Description of the comparison -->
+                <div class="comparison-section">
+                    <h2 class="section-title">Feature Comparison</h2> <!-- Title for the feature comparison section -->
+                    <p class="section-content">This section highlights the features we found on other websites, the inspiration we took, and how we improved them on our platform.</p> <!-- Description of the feature comparison -->
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th> <!-- Column for the feature being compared -->
+                                <th>Other Website</th> <!-- Column for the other website's implementation -->
+                                <th>Our Website</th> <!-- Column for our website's implementation -->
+                                <th>Improvement</th> <!-- Column for the improvements made -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Typography</td> <!-- Feature being compared -->
+                                <td>The font is not as clear and readable</td> <!-- Other website's issue -->
+                                <td>Clear and readable fonts</td> <!-- Our website's solution -->
+                                <td>Improve accessibility</td> <!-- Improvement made -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Third comparison box -->
+            <!-- This box compares the Amazon website with our website, highlighting improvements in imagery. -->
+            <div class="comparison-box">
+                <h3>Third Comparison</h3> <!-- Title for the third comparison -->
+                <div class="comparison-images-box">
+                    <div class="comparison-images">
+                        <a href="https://www.amazon.com/s?k=product&crid=1WO3KWK6KW1MV&sprefix=produc%2Caps%2C359&ref=nb_sb_noss_2" target="_blank">
+                            <img src="../img/amzon.png" alt="Example Website Screenshot"> <!-- Screenshot of the Amazon website -->
+                        </a>
+                        <p class="comparison-images-p">Example Website</p> <!-- Label for the example website screenshot -->
+                    </div>
+                    <div class="comparison-images">
+                        <a href="analog.html" target="_blank">
+                            <img src="../img/productpage.png" alt="Our Website Screenshot"> <!-- Screenshot of our website -->
+                        </a>
+                        <p class="comparison-images-p">Our Website</p> <!-- Label for our website screenshot -->
+                    </div>
+                </div>
+                <!-- Table for the third comparison -->
+                <p class="comparison-box-p">This comparison highlights the differences between Amazon and Our website</p> <!-- Description of the comparison -->
+                <div class="comparison-section">
+                    <h2 class="section-title">Feature Comparison</h2> <!-- Title for the feature comparison section -->
+                    <p class="section-content">This section highlights the features we found on other websites, the inspiration we took, and how we improved them on our platform.</p> <!-- Description of the feature comparison -->
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th> <!-- Column for the feature being compared -->
+                                <th>Other Website</th> <!-- Column for the other website's implementation -->
+                                <th>Our Website</th> <!-- Column for our website's implementation -->
+                                <th>Improvement</th> <!-- Column for the improvements made -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Imagery</td> <!-- Feature being compared -->
+                                <td>The use of different products is not professional and clear</td> <!-- Other website's issue -->
+                                <td>The use of watch images is professional and relevant</td> <!-- Our website's solution -->
+                                <td>Improve in quality of product image</td> <!-- Improvement made -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Fourth comparison box -->
+            <!-- This box compares the Omega Watches website with our website, highlighting improvements in section delineation. -->
+            <div class="comparison-box">
+                <h3>Fourth Comparison</h3> <!-- Title for the fourth comparison -->
+                <div class="comparison-images-box">
+                    <div class="comparison-images">
+                        <a href="https://www.omegawatches.com/" target="_blank">
+                            <img src="../img/omega.png" alt="Example Website Screenshot"> <!-- Screenshot of the Omega Watches website -->
+                        </a>
+                        <p class="comparison-images-p">Example Website</p> <!-- Label for the example website screenshot -->
+                    </div>
+                    <div class="comparison-images">
+                        <a href="../index.html" target="_blank">
+                            <img src="../img/home page.png" alt="Our Website Screenshot"> <!-- Screenshot of our website -->
+                        </a>
+                        <p class="comparison-images-p">Our Website</p> <!-- Label for our website screenshot -->
+                    </div>
+                </div>
+                <!-- Table for the fourth comparison -->
+                <p class="comparison-box-p">This comparison highlights the differences between Omega Watches and Our website</p> <!-- Description of the comparison -->
+                <div class="comparison-section">
+                    <h2 class="section-title">Feature Comparison</h2> <!-- Title for the feature comparison section -->
+                    <p class="section-content">This section highlights the features we found on other websites, the inspiration we took, and how we improved them on our platform.</p> <!-- Description of the feature comparison -->
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th> <!-- Column for the feature being compared -->
+                                <th>Other Website</th> <!-- Column for the other website's implementation -->
+                                <th>Our Website</th> <!-- Column for our website's implementation -->
+                                <th>Improvement</th> <!-- Column for the improvements made -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Section</td> <!-- Feature being compared -->
+                                <td>Key sections like "Contact Us," "Products," and "About Us" are not clearly delineated</td> <!-- Other website's issue -->
+                                <td>Key sections like "Contact Us," "Products," and "About Us" are clearly delineated</td> <!-- Our website's solution -->
+                                <td>Key sections are clearly delineated</td> <!-- Improvement made -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Fifth comparison box -->
+            <!-- This box compares the Casio Watches website with our website, highlighting improvements in call-to-action buttons. -->
+            <div class="comparison-box">
+                <h3>Fifth Comparison</h3> <!-- Title for the fifth comparison -->
+                <div class="comparison-images-box">
+                    <div class="comparison-images">
+                        <a href="https://www.casio.com/in/watches/gshock/best-sellers/" target="_blank">
+                            <img src="../img/casiowebsite.png" alt="Example Website Screenshot"> <!-- Screenshot of the Casio Watches website -->
+                        </a>
+                        <p class="comparison-images-p">Example Website</p> <!-- Label for the example website screenshot -->
+                    </div>
+                    <div class="comparison-images">
+                        <a href="analog.html" target="_blank">
+                            <img src="../img/productpage.png" alt="Our Website Screenshot"> <!-- Screenshot of our website -->
+                        </a>
+                        <p class="comparison-images-p">Our Website</p> <!-- Label for our website screenshot -->
+                    </div>
+                </div>
+                <!-- Table for the fifth comparison -->
+                <p class="comparison-box-p">This comparison highlights the differences between Casio Watches and Our website</p> <!-- Description of the comparison -->
+                <div class="comparison-section">
+                    <h2 class="section-title">Feature Comparison</h2> <!-- Title for the feature comparison section -->
+                    <p class="section-content">This section highlights the features we found on other websites, the inspiration we took, and how we improved them on our platform.</p> <!-- Description of the feature comparison -->
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th> <!-- Column for the feature being compared -->
+                                <th>Other Website</th> <!-- Column for the other website's implementation -->
+                                <th>Our Website</th> <!-- Column for our website's implementation -->
+                                <th>Improvement</th> <!-- Column for the improvements made -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Call-to-action Button</td> <!-- Feature being compared -->
+                                <td>Their is not easily accessible for the cart options.</td> <!-- Other website's issue -->
+                                <td>Their is easily accessible for the cart options.</td> <!-- Our website's solution -->
+                                <td>User can easily know how many products they have selected</td> <!-- Improvement made -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <!-- The footer includes links to different sections of the website, payment methods, and social media icons. -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4> <!-- Title for the company links section -->
+                <ul>
+                    <li><a href="../index.html">Home</a></li> <!-- Link to the home page -->
+                    <li><a href="aboutUs.html">About Us</a></li> <!-- Link to the about us page -->
+                    <li><a href="blog.html">Blog</a></li> <!-- Link to the blog page -->
+                    <li><a href="analog.html">Products</a></li> <!-- Link to the products page -->
+                    <li><a href="research.html">Research</a></li> <!-- Link to the research page -->
+                    <li><a href="contactUs.html">Contact</a></li> <!-- Link to the contact page -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4> <!-- Title for the payment methods section -->
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment"> <!-- eSewa payment method icon -->
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment"> <!-- Khalti payment method icon -->
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4> <!-- Title for the watches section -->
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li> <!-- Link to analog watches -->
+                    <li><a href="digital.html">Digital Watches</a></li> <!-- Link to digital watches -->
+                    <li><a href="smart.html">Smart Watches</a></li> <!-- Link to smart watches -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4> <!-- Title for the social media section -->
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram"> <!-- Instagram icon -->
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook"> <!-- Facebook icon -->
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)"> <!-- Twitter (X) icon -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p> <!-- Copyright notice -->
+    </footer>
+</body>
+
+</html>

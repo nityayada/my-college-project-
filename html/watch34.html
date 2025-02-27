@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="datetime"></div>
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="analog.html">Products</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="total-container">
+        <!-- Product Container -->
+        <a href="javascript:history.back()" class="back-button" title="Go back">
+            Back
+        </a>
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <img src="../img/Gshock6.png" alt="Wireless Headphones">
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Casio G-Shock <br>GM-S5600U-1</h1>
+                <div class="product-price">RS. 46000</div>
+                <p class="product-description">
+                    Slip on a metallic glow with the iconic G-SHOCK look in a fit more comfortable than ever.
+
+                    The GM-S5600 takes the GM-5600, which features the iconic form of the very first G-SHOCK, and makes
+                    it even smaller and slimmer. The length of the band has also been adjusted to fit smaller wrists
+                    with total comfort. Not just comfortable, but sophisticated, too — the metal-clad bezel says premium
+                    elegance all the way.
+
+                    Activate the high-brightness LED light to illuminate the screen for outstanding readability, even in
+                    the dark.
+                </p>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="showPopup()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-list">
+                <!-- Review Items -->
+                <div class="review-item">
+                    <div class="review-author">Aditya Uprety</div>
+                    <div class="review-stars">★★★★★</div>
+                    <p>A bit bulky but worth it for all the features.</p>
+                    <div class="review-date">Posted on Septmeber 15, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarah Joshi.</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>Battery life is excellent, lasts a whole week easily.</p>
+                    <div class="review-date">Posted on May 20, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Simran Kharel</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>Love the fitness tracking features, very detailed.</p>
+                    <div class="review-date">Posted on August 10, 2024</div>
+                </div>
+            </div>
+            <a href="review.html">
+                <button class="leave-review">Leave a Review</button>
+            </a>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-messege">
+                <p>Item successfully added!</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="analog.html">Products</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4>
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment">
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4>
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li>
+                    <li><a href="digital.html">Digital Watches</a></li>
+                    <li><a href="smart.html">Smart Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

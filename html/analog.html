@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Metadata and linking external CSS -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the site is responsive -->
+    <meta name="author" content="watch"> <!-- Author of the website -->
+    <meta name="description" content="This e-commerce website is selling all types of watches">
+    <!-- Description for SEO -->
+    <meta name="keywords" content="html,css,js"> <!-- Keywords for SEO -->
+    <!-- Remove or adjust the refresh meta tag as it refreshes the page every 1.2 seconds, which is unnecessary -->
+    <meta http-equiv="refresh" content="1.2s">
+    <title>Analog Page</title> <!-- Title of the webpage -->
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- Links to the external CSS file -->
+    <script src="../js/script.js"></script> <!-- Links to the external JavaScript file -->
+
+    <!-- interal css -->
+    <style>
+        /* Styling for the watch box container */
+        .watch-box {
+            position: relative;
+            /* Allows for absolute positioning of child elements */
+        }
+
+        /* Show details when the watch box is hovered or clicked */
+        .watch-box.show-details #reviews-page {
+            display: block;
+        }
+
+        /* Button Styling */
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            /* Margin around the button */
+            background-color: #4CAF50;
+            color: white;
+            /* White text color */
+            border: none;
+            /* No border */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+        }
+
+        /* Button hover effect */
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Popup styling */
+        #popup {
+            position: fixed;
+            /* Fixed position to stay in place */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent black background */
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically */
+        }
+
+        /* Popup content styling */
+        #popup-content {
+            background-color: white;
+            padding: 20px;
+            /* Padding inside the popup */
+            border-radius: 5px;
+            /* Rounded corners */
+            text-align: center;
+            /* Center text */
+        }
+
+        /* OK button styling inside the popup */
+        #ok-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            /* Padding */
+            border: none;
+            /* No border */
+            border-radius: 5px;
+            /* Rounded corners */
+            cursor: pointer;
+            /* Pointer cursor on hover */
+            margin-top: 10px;
+        }
+
+        /* OK button hover effect */
+        #ok-button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div id="datetime"></div> <!-- Placeholder for displaying date and time -->
+        <ul>
+            <!-- Navigation links -->
+            <li><a href="../index.html">Home</a></li><!--  link for the index page -->
+            <li><a href="aboutUs.html">About Us</a></li> <!--  link for the about us page -->
+            <li><a href="blog.html">Blog</a></li><!--  link for the blog page -->
+            <li><a href="analog.html" class="active">Products</a></li> <!-- Active link for the current page -->
+            <li><a href="research.html">Research</a></li><!--  link for the research page -->
+            <li><a href="contactUs.html">Contact Us</a></li><!--  link for the contact us page -->
+        </ul>
+    </nav>
+
+    <!-- Section for selling watches -->
+    <section class="selling-watches">
+        <!-- Section header with title and category buttons -->
+        <div class="header-container"
+            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <!--inline css-->
+            <!-- Title of the section -->
+            <div class="analog-title"
+                style="font-weight: bold; font-size: 24px; color: #444; text-transform: uppercase; letter-spacing: 2px;">
+                <!--inline css-->
+                ANALOG WATCHES
+            </div>
+            <!-- Buttons to switch between watch categories -->
+            <div class="top-right-button">
+                <a href="analog.html"><button class="watches-button active-button">Analog
+                        Watches</button></a><!--active analog watches page-->
+                <a href="digital.html"><button class="watches-button">Digital
+                        Watches</button></a><!--digital watches button-->
+                <a href="smart.html"><button class="watches-button">Smart
+                        Watches</button></a><!--smart watches button-->
+
+                <!-- Cart button with image -->
+                <button class="cart-button">
+                    <img src="../img/cart.png" alt="Cart"> <!-- Cart icon -->
+                    <span id="cart-count" class="cart-count">0</span> <!-- Cart count displayed here -->
+                </button>
+
+                <!-- Reset Cart Button -->
+                <button class="reset-cart" onclick="resetCart()">Buy</button> <!-- Button to reset the cart -->
+            </div>
+        </div>
+
+        <!-- Watch frame containing all watch products -->
+        <div class="watch-frame">
+            <!-- Watch 1 -->
+            <a href="watch1.html">
+                <div class="watch-box">
+                    <img src="../img/Citizen9.png" alt="watch 1"> <!-- Watch image -->
+                    <div class="below-text">Corso</div> <!-- Watch name -->
+
+                    <!-- Watch details section (initially hidden) -->
+                    <div class="watch-details">
+                        <p>Citizen</p> <!-- Brand -->
+                        <p>AW1236-03A</p> <!-- Model -->
+                        <p>MRP RS.70000</p> <!-- Price -->
+                        <p>For the ultimate classic vintage style</p> <!-- Description -->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 2 -->
+            <a href="watch2.html">
+                <div class="watch-box">
+                    <img src="../img/Citizen2.png" alt="watch 1">
+                    <div class="below-text">TSUYOSA</div>
+                    <!-- Watch details section (initially hidden) -->
+                    <div class="watch-details">
+                        <p> Citizen</p> <!--brand -->
+                        <p> NJ01251-53M</p><!--model-->
+                        <p>MRP RS.20000</p><!--price-->
+                        <p>For the Eco-drive technology</p> <!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 3 -->
+            <a href="watch3.html">
+                <div class="watch-box">
+                    <img src="../img/Citizen11.png" alt="watch 1">
+                    <div class="below-text">CALIBER 0210</div>
+                    <!-- Watch details section (initially hidden) -->
+                    <div class="watch-details">
+                        <p> Citizen</p> <!--brand -->
+                        <p> NC10001-58A</p> <!--model -->
+                        <p>MRP RS.30000</p> <!--price-->
+                        <p>This meets the superior precision with highest quality </p><!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 4 -->
+            <a href="watch4.html">
+                <div class="watch-box">
+                    <img src="../img/Citizen7.png" alt="watch 1">
+                    <div class="below-text">CORSO 01</div>
+                    <!-- Watch details section (initially hidden) -->
+                    <div class="watch-details">
+                        <p>Citizen</p> <!--brand -->
+                        <p>BM7492-57A</p> <!--model-->
+                        <p>MRP RS.10000</p> <!--price-->
+                        <p>This is gold-tone stainless version of CORSO</p> <!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 5 -->
+            <a href="watch5.html">
+                <div class="watch-box">
+                    <img src="../img/Citizen5.png" alt="watch 1">
+                    <div class="below-text">ADDYSEN</div>
+                    <!-- Watch details section (initially hidden) -->
+                    <div class="watch-details">
+                        <p>Citizen</p> <!--brand -->
+                        <p>AW0092-07Q</p> <!--model-->
+                        <p>MRP RS.30040</p> <!--price-->
+                        <p>Never needs a battery with caliber E111</p><!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 6 -->
+            <a href="watch6.html">
+                <div class="watch-box">
+                    <img src="../img/Citizen6.png" alt="watch 1">
+                    <div class="below-text">TONY STARK '63</div>
+                    <!-- Watch details section (initially hidden) -->
+                    <div class="watch-details">
+                        <p>Citizen</p> <!-- Brand -->
+                        <p> AW2075-05W</p> <!--Model-->
+                        <p>MRP RS.600000</p> <!--price-->
+                        <p>Sophistication fuses technology in the latest Marvel's Tony Stark Timepiece</p>
+                        <!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 7 -->
+            <a href="watch7.html">
+                <div class="watch-box">
+                    <img src="../img/Citizen4.png" alt="watch 1">
+                    <div class="below-text">SURATTO</div>
+
+                    <div class="watch-details">
+                        <p>Citizen</p> <!-- Brand -->
+                        <p> AR3120-08L</p> <!--Model-->
+                        <p>MRP RS.30500</p> <!--price-->
+                        <p>Classic lines and a simple defines the newest to the classic collection</p>
+                        <!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 8 -->
+            <a href="watch8.html">
+                <div class="watch-box">
+                    <img src="../img/Casio7.png" alt="watch 1">
+                    <div class="below-text">CASIO </div>
+
+                    <div class="watch-details">
+                        <p>Casio</p> <!-- Brand -->
+                        <p>AQ-230-3AMQ7</p> <!--Model-->
+                        <p>MRP RS.4200</p> <!--price-->
+                        <p>The classic analog-digital combination dressedup in beautiful hues</p> <!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 9 -->
+            <a href="watch9.html">
+                <div class="watch-box">
+                    <img src="../img/Casio5.png" alt="watch 1">
+                    <div class="below-text">CASIO</div>
+
+                    <div class="watch-details">
+                        <p>Casio</p> <!-- Brand -->
+                        <p>MDV-107D-3A2V</p> <!--Model-->
+                        <p>MRP RS.35000</p> <!--price-->
+                        <p>Take your full-metal analog style to the water</p> <!--description-->
+                    </div>
+                </div>
+            </a>
+
+            <!-- Watch 10 -->
+            <a href="watch10.html">
+                <div class="watch-box">
+                    <img src="../img/Casio8.png" alt="watch 1">
+                    <div class="below-text">CASIO</div>
+
+                    <div class="watch-details">
+                        <p>Casio</p> <!-- Brand -->
+                        <p>AQ-230GA-5AMQY</p> <!--Model-->
+                        <p> MRP RS.42000</p> <!--price-->
+                        <p>For the ultimate classic vintage style</p> <!--description-->
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Links -->
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li> <!--link for the index page-->
+                    <li><a href="aboutUs.html">About Us</a></li><!--link for the about us page-->
+                    <li><a href="blog.html">Blog</a></li> <!--link for the blog page-->
+                    <li><a href="analog.html">Products</a></li> <!--link for the products page-->
+                    <li><a href="research.html">Research</a></li> <!--link for the research page-->
+                    <li><a href="contactUs.html">Contact</a></li> <!--link for the contact us page-->
+                </ul>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="footer-section">
+                <h4>Payment Method</h4>
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <!--through this we can go the esewa payment apps for the payments -->
+                        <img src="../img/eswea.jpg" alt="eSewa Payment"> <!-- eSewa payment icon -->
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <!--through this we can go the esewa payment apps for the payments -->
+                        <img src="../img/khalti.png" alt="Khalti Payment"> <!-- Khalti payment icon -->
+                    </a>
+                </div>
+            </div>
+
+            <!-- Watch Categories -->
+            <div class="footer-section">
+                <h4>Watches</h4>
+                <ul>
+                    <li><a href="analog.html">Analog Watches</a></li>
+                    <!--through this we can go the analog watches product page-->
+                    <li><a href="digital.html">Digital Watches</a></li>
+                    <!--through this we can go the digital watches product page-->
+                    <li><a href="smart.html">Smart Watches</a></li>
+                    <!--through this we can go the smart watches product page-->
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <!--through this we can go the our website instagram site -->
+                        <img src="../img/insta.png" alt="Instagram"> <!-- Instagram icon -->
+                    </a>
+                    <a href="https://www.facebook.com"
+                        target="_blank"><!--through this we can go the our website facebook site -->
+                        <img src="../img/facebook.png" alt="Facebook"> <!-- Facebook icon -->
+                    </a>
+                    <a href="https://twitter.com"
+                        target="_blank"><!--through this we can go the our website twitter site -->
+                        <img src="../img/x.png" alt="Twitter (X)"> <!-- Twitter (X) icon -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Notice -->
+        <p class="copyright">© 2025 Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple Popup -->
+    <div id="popup" style="display:none;">
+        <div id="popup-content">
+            <p>This feature will be added soon</p> <!-- Popup message -->
+            <button id="ok-button" onclick="closePopup()">OK</button> <!-- OK button to close the popup -->
+        </div>
+    </div>
+
+    <!-- internal js -->
+    <script>
+        // Load cart count when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            let cartCount = localStorage.getItem("cartCount") || 0; // Get cart count from localStorage
+            document.getElementById("cart-count").innerText = cartCount; // Update cart count on the page
+        });
+
+        // Function to reset the cart
+        function resetCart() {
+            showPopup(); // Show the popup
+        }
+
+        // Function to show the popup
+        function showPopup() {
+            document.getElementById("popup").style.display = "flex"; // Display the popup
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            // Reset the cart count in localStorage to 0 after closing the popup
+            localStorage.setItem("cartCount", 0);
+
+            // Update the cart count on the page to 0
+            document.getElementById("cart-count").innerText = 0;
+
+            // Hide the popup
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="datetime"></div>
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="analog.html">Products</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="total-container">
+        <!-- Product Container -->
+        <a href="javascript:history.back()" class="back-button" title="Go back">
+            Back
+        </a>
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <img src="../img/ultimaamagicpro.png" alt="Wireless Headphones">
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Utima Magic Pro </h1>
+                <div class="product-price">RS. 7000</div>
+                <p class="product-description">
+                    The Ultima Watch Magic Pro is a feature-rich smartwatch designed for both style and functionality.
+                    It boasts a 1.96-inch TFT LCD display with a 320×386 pixel resolution and 500 nits of peak
+                    brightness, ensuring clear visuals even in bright conditions. The watch is equipped with Bluetooth
+                    calling capabilities, allowing users to make and receive calls directly from the watch. It also
+                    offers over 110 sports modes, heart rate monitoring, SpO₂ level tracking, and sleep tracking,
+                    providing comprehensive health and fitness insights. The device is built with a zinc alloy frame and
+                    features an IP67 rating for dust and water resistance, making it suitable for various environments.
+                </p>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="showPopup()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-list">
+                <!-- Review Items -->
+                <div class="review-item">
+                    <div class="review-author">John Rohan</div>
+                    <div class="review-stars">★★★★★</div>
+                    <p>It’s a bit pricey, but for iPhone users, it’s worth the investment.</p>
+                    <div class="review-date">Posted on December 15, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Rohan Singh</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>I’ve had no issues with the build quality. It feels premium.</p>
+                    <div class="review-date">Posted on May 10, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarah Singh</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>The heart rate and oxygen levels tracking are spot-on.</p>
+                    <div class="review-date">Posted on March 9, 2024</div>
+                </div>
+            </div>
+            <a href="review.html">
+                <button class="leave-review">Leave a Review</button>
+            </a>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-messege">
+                <p>Item successfully added!</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="analog.html">Products</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4>
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment">
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4>
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li>
+                    <li><a href="digital.html">Digital Watches</a></li>
+                    <li><a href="smart.html">Smart Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

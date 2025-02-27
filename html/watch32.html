@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="datetime"></div>
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="analog.html">Products</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="total-container">
+        <!-- Product Container -->
+        <a href="javascript:history.back()" class="back-button" title="Go back">
+            Back
+        </a>
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <img src="../img/Gshock2.png" alt="Wireless Headphones">
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Casio G-Shock <br>MRG-B5000</h1>
+                <div class="product-price">RS. 55000</div>
+                <p class="product-description">
+                    These breakthrough timepieces are a study in metal craftsmanship. The case and bezel are made of
+                    Ti64-based super-hard titanium alloy, while the band is made of another special titanium alloy,
+                    DAT55G, that is both three times harder than pure titanium and highly workable. The bezel top is
+                    crafted in COBARION, a cobalt-chrome alloy four times harder than pure titanium.
+
+                    The bezel alone consists of 25 different components, each individually polished for a stunning
+                    detailed texture. The state-of-the-art Multi-guard Structure incorporates flat springs and silicone
+                    buffers into the multi-component bezel, ensuring outstanding shock absorption to protect the
+                    dedicated MR-G module with gold-plated retainer plate.
+
+                    Inspired by ink wash painting and calligraphy done in blue ink, the MRG-5000BA features band screws
+                    and bezel components ion-plated in blue against a base of black diamond-like carbon coating. Touches
+                    of blue vapor deposition add bold interest to the watch face, and the iconic brick pattern is a nod
+                    to the original DW-5000 G-SHOCK design.
+                </p>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="showPopup()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-list">
+                <!-- Review Items -->
+                <div class="review-item">
+                    <div class="review-author">Rohan Mangal</div>
+                    <div class="review-stars">★★★★★</div>
+                    <p>The barometric altimeter is really useful for climbing.</p>
+                    <div class="review-date">Posted on May 15, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarah Goshi</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>Comfortable to wear even on long hikes.</p>
+                    <div class="review-date">Posted on May 10, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarita Joshi</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>It's the ultimate watch for marathon runners and hikers.</p>
+                    <div class="review-date">Posted on April 10, 2024</div>
+                </div>
+            </div>
+            <a href="review.html">
+                <button class="leave-review">Leave a Review</button>
+            </a>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-messege">
+                <p>Item successfully added!</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="analog.html">Products</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4>
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment">
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4>
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li>
+                    <li><a href="digital.html">Digital Watches</a></li>
+                    <li><a href="smart.html">Smart Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

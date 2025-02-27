@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="datetime"></div>
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="analog.html">Products</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="total-container">
+        <!-- Product Container -->
+        <a href="javascript:history.back()" class="back-button" title="Go back">
+            Back
+        </a>
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <img src="../img/kick.png" alt="Wireless Headphones">
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Kick Aerowatch Sigma</h1>
+                <div class="product-price">RS.1900</div>
+                <p class="product-description">
+                    The Kick Aerowatch Sigma is a smartwatch featuring a 2.01-inch Fluid HD display, delivering a bright
+                    and smooth viewing experience. It offers Bluetooth 5.4 connectivity for seamless pairing with
+                    devices, AI voice assistance for hands-free control, and multiple sports modes to track various
+                    activities. With an IP67 rating, the watch is resistant to dust and water, making it suitable for
+                    everyday use. Additionally, it provides health monitoring features such as heart rate tracking, SpO₂
+                    monitoring, and step tracking. The Kick Aerowatch Sigma is available in multiple colors, including
+                    Cool Grey.
+                </p>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="showPopup()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-list">
+                <!-- Review Items -->
+                <div class="review-item">
+                    <div class="review-author">Rohit Sharma </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p>Best smartwatch I’ve owned! The integration with my iPhone is flawless.</p>
+                    <div class="review-date">Posted on March 15, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarah Sharma.</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>Amazing health features, especially ECG. Gives me peace of mind.</p>
+                    <div class="review-date">Posted on March 10, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarita Mangal</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>I love how fast it charges and how smooth the interface is.</p>
+                    <div class="review-date">Posted on March 10, 2024</div>
+                </div>
+            </div>
+            <a href="review.html">
+                <button class="leave-review">Leave a Review</button>
+            </a>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-messege">
+                <p>Item successfully added!</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="analog.html">Products</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4>
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment">
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4>
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li>
+                    <li><a href="digital.html">Digital Watches</a></li>
+                    <li><a href="smart.html">Smart Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

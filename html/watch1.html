@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <!-- Linking external CSS for styling -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Linking external JavaScript for interactivity -->
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <!-- The navigation bar includes a date/time display and links to different pages of the website. -->
+    <nav>
+        <div id="datetime"></div> <!-- Placeholder for displaying the current date and time (populated via JavaScript) -->
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li> <!-- Link to the home page (currently active) -->
+            <li><a href="aboutUs.html">About Us</a></li> <!-- Link to the about us page -->
+            <li><a href="blog.html">Blog</a></li> <!-- Link to the blog page -->
+            <li><a href="analog.html">Products</a></li> <!-- Link to the products page -->
+            <li><a href="research.html">Research</a></li> <!-- Link to the research page -->
+            <li><a href="contactUs.html">Contact Us</a></li> <!-- Link to the contact us page -->
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <!-- This container holds the product details, reviews, and other related content. -->
+    <div class="total-container">
+        <!-- Back Button -->
+        <!-- A button to allow users to navigate back to the previous page. -->
+        <a href="javascript:history.back()" class="back-button" title="Go back">
+            Back
+        </a>
+
+        <!-- Product Container -->
+        <!-- This section displays the product image, title, price, description, and an "Add to Cart" button. -->
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <img src="../img/Citizen9.png" alt="Wireless Headphones"> <!-- Image of the product -->
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Citizen<br>
+                    Corso AW1236-03A
+                </h1> <!-- Product title -->
+
+                <div class="product-price"> Rs.70000</div> <!-- Product price -->
+                <p class="product-description">
+                    Keep it simple with the classic lines and rich leather strap of these men's CITIZEN® strap watches.
+                    Featured with stainless steel case, black leather strap, metallic silver dial with rose gold accents
+                    and date. Featuring our Eco-Drive technology – powered by light, any light. Never needs a battery.
+                    Caliber number J810.
+                    Growing up, J Balvin always gravitated to G-SHOCK, associating the watch with a warm sense of
+                    empowerment, and has chosen it as his preferred accessory ever since he was younger. As J Balvin’s
+                    passion for art, culture and fashion continued to evolve over the years, the G-SHOCK style remained
+                    a constant — so it is no surprise that this J Balvin-Casio collaboration yields a very special
+                    watch. For the first time ever, G-SHOCK and J Balvin proudly come together to introduce an
+                    irresistible inspired G-SHOCK design — marking the global brand’s first partnership with a Latin
+                    artist.
+                </p> <!-- Product description -->
+
+                <!-- Add to Cart Button -->
+                <!-- A button to add the product to the cart, with an onclick event to show a popup. -->
+                <button class="add-to-cart" onclick="showPopup()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <!-- This section displays customer reviews for the product. -->
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2> <!-- Title for the reviews section -->
+            <div class="reviews-list">
+                <!-- Review Items -->
+                <!-- Each review item includes the author's name, star rating, review text, and date. -->
+                <div class="review-item">
+                    <div class="review-author">John Rai</div> <!-- Review author's name -->
+                    <div class="review-stars">★★★★★</div> <!-- Star rating -->
+                    <p>Best Watch I've ever owned! The Watch is amazing.</p> <!-- Review text -->
+                    <div class="review-date">Posted on March 15, 2024</div> <!-- Review date -->
+                </div>
+                <hr> <!-- Horizontal line to separate reviews -->
+                <div class="review-item">
+                    <div class="review-author">Krishna Ram</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>Great quality, but wish the battery lasted a bit longer.</p>
+                    <div class="review-date">Posted on March 10, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarah Mangal</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>Great Watch quality.</p>
+                    <div class="review-date">Posted on March 10, 2024</div>
+                </div>
+            </div>
+            <!-- Button to leave a review -->
+            <a href="review.html">
+                <button class="leave-review">Leave a Review</button>
+            </a>
+        </div>
+
+        <!-- Popup Section -->
+        <!-- A popup that appears when the "Add to Cart" button is clicked. -->
+        <div id="popup" class="popup">
+            <div class="popup-messege">
+                <p>Item successfully added!</p> <!-- Popup message -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <!-- The footer includes links to different sections of the website, payment methods, and social media icons. -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4> <!-- Title for the company links section -->
+                <ul>
+                    <li><a href="../index.html">Home</a></li> <!-- Link to the home page -->
+                    <li><a href="aboutUs.html">About Us</a></li> <!-- Link to the about us page -->
+                    <li><a href="blog.html">Blog</a></li> <!-- Link to the blog page -->
+                    <li><a href="analog.html">Products</a></li> <!-- Link to the products page -->
+                    <li><a href="research.html">Research</a></li> <!-- Link to the research page -->
+                    <li><a href="contactUs.html">Contact</a></li> <!-- Link to the contact page -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4> <!-- Title for the payment methods section -->
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment"> <!-- eSewa payment method icon -->
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment"> <!-- Khalti payment method icon -->
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4> <!-- Title for the watches section -->
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li> <!-- Link to analog watches -->
+                    <li><a href="digital.html">Digital Watches</a></li> <!-- Link to digital watches -->
+                    <li><a href="smart.html">Smart Watches</a></li> <!-- Link to smart watches -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4> <!-- Title for the social media section -->
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram"> <!-- Instagram icon -->
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook"> <!-- Facebook icon -->
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)"> <!-- Twitter (X) icon -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p> <!-- Copyright notice -->
+    </footer>
+</body>
+
+</html>

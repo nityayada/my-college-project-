@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div id="datetime"></div>
+        <ul>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="analog.html">Products</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="total-container">
+        <!-- Product Container -->
+        <a href="javascript:history.back()" class="back-button" title="Go back">
+            Back
+        </a>
+        <div class="product-container">
+            <!-- Product Image -->
+            <div class="product-image">
+                <img src="../img/apple10.png" alt="Wireless Headphones">
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1 class="product-title">Apple Series 10</h1>
+                <div class="product-price">RS.59000</div>
+                <p class="product-description">
+                    The Apple Watch Series 10, released on September 20, 2024, marks a significant milestone in wearable
+                    technology. It features Apple's largest and most advanced display to date, utilizing a wide-angle
+                    OLED screen that's brighter when viewed from an angle, enhancing readability at a glance. The Series
+                    10 is also the thinnest Apple Watch ever, achieved through comprehensive re-engineering of
+                    components like the SiP, Digital Crown, speaker, front crystal, and antenna. Health monitoring
+                    capabilities have been expanded to include sleep apnea detection, pending regulatory approval,
+                    alongside existing features like heart rate monitoring and sleep tracking.
+                </p>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart" onclick="showPopup()">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-list">
+                <!-- Review Items -->
+                <div class="review-item">
+                    <div class="review-author">John Rai</div>
+                    <div class="review-stars">★★★★★</div>
+                    <p>I love the customizable watch faces. It feels like my personal style.</p>
+                    <div class="review-date">Posted on May 15, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarah Shrestha</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>Perfect for daily fitness tracking, but lacks advanced features for tech enthusiasts.</p>
+                    <div class="review-date">Posted on March 10, 2024</div>
+                </div>
+                <hr>
+                <div class="review-item">
+                    <div class="review-author">Sarah Khanal</div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p>A fantastic smartwatch with great fitness tracking features!</p>
+                    <div class="review-date">Posted on April 10, 2024</div>
+                </div>
+            </div>
+            <a href="review.html">
+                <button class="leave-review">Leave a Review</button>
+            </a>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-messege">
+                <p>Item successfully added!</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="analog.html">Products</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Payment Method</h4>
+                <div class="icons">
+                    <a href="https://esewa.com.np" target="_blank">
+                        <img src="../img/eswea.jpg" alt="eSewa Payment">
+                    </a>
+                    <a href="https://khalti.com" target="_blank">
+                        <img src="../img/khalti.png" alt="Khalti Payment">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Watches</h4>
+                <ul>
+                    <li><a href="analog.html">Analog watches</a></li>
+                    <li><a href="digital.html">Digital Watches</a></li>
+                    <li><a href="smart.html">Smart Watches</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/insta.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../img/x.png" alt="Twitter (X)">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2025 Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

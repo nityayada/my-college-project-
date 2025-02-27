@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Metadata and linking external CSS -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the site is responsive -->
+    <meta name="author" content="watch"> <!-- Author of the website -->
+    <meta name="description" content="This e-commerce website is selling all types of watches"> <!-- Description for SEO -->
+    <meta name="keywords" content="html,css,js"> <!-- Keywords for SEO -->
+    <!-- Remove or adjust the refresh meta tag as it refreshes the page every 1.2 seconds -->
+    <meta http-equiv="refresh" content="1.2s">
+    <title>Home Page</title> <!-- Title of the webpage -->
+    <!-- External CSS and JavaScript files -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links to the external CSS file -->
+    <script src="js/script.js"></script> <!-- Links to the external JavaScript file -->
+
+    <!-- internal css -->
+    <style>
+        /* Smooth scrolling for better user experience */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Positioning the previous button for the slider */
+        .prev {
+            left: 10px; /* Positions the previous button 10px from the left */
+        }
+
+        /* Positioning the next button for the slider */
+        .next {
+            right: 10px; /* Positions the next button 10px from the right */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div id="datetime"></div> <!-- Placeholder for displaying date and time -->
+        <ul>
+            <!-- Navigation links -->
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="html/aboutUs.html">About Us</a></li>
+            <li><a href="html/blog.html">Blog</a></li>
+            <li><a href="html/analog.html">Products</a></li>
+            <li><a href="html/research.html">Research</a></li>
+            <li><a href="html/contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider Section -->
+    <div id="slider-container">
+        <div id="slider">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <!-- headline foe the slider 1 --> 
+                <div id="flex-container" style="background-image: url('img/winterslider2.png'); 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center;">
+                    <h1 class="headline" style="color: black; font-size: 46px; margin-left: 365px; margin-top: 200px;">Welcome to Our Watch Store!</h1> <!--inline css-->
+                    <!-- this for the description for the slider 1 -->
+                    <p class="description" style="color: #00000082; margin-left: 500px;">
+                        Hurry Up! For the Winter Sell Starting Soon. <br>
+                    </p>
+                    <!-- this for the shop now button in the slider 1 through we can go directly to the product section  -->
+                    <a href="index.html#products">
+                        <button class="cta-button" style="margin-left: 600px;">Shop Now</button> <!--inline css-->
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div id="flex-container" style="background-image: url('img/analogslider.png'); 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center;"> <!--inline css-->
+                    <!-- headline foe the slider 2 -->
+                    <h1 class="headline">Welcome to Our Watch Store!</h1>
+                  <!-- this for the description for the slider 2 -->
+                    <p class="description">
+                        Discover the finest collection of watches crafted to <br> perfection. <br>
+                    </p>
+                    <!-- this for the shop now button in the slider 2 through we can go directly to the product section  -->
+                    <a href="index.html#products">
+                        <button class="cta-button">Shop Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div id="flex-container" style="background-image: url('img/smartslider.png'); 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center;"> <!--inline css-->
+                    <!-- headline foe the slider 3 -->
+                    <h1 class="headline" style="color: black; margin-top: 5px; margin-left: 337px; font-size: 46px;">Welcome to Our Watch Store!</h1> <!--inline css-->
+                    <!-- this for the description for the slider 3 -->
+                    <p class="description" style="color: #000000ab; margin-left: 20px; margin-top: 254px;"> <!--inline css-->
+                        Stay connected and track your fitness <br> with our latest smartwatch – sleek design, <br>
+                        smart features, and all-day comfort! <br>
+                    </p>
+                    <!-- this for the shop now button in the slider 3 through we can go directly to the product section  --> 
+                    <a href="index.html#products">
+                        <button class="cta-button" style="margin-left: 1000px; margin-top: 0px;">Shop Now</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide">
+                <div id="flex-container" style="background-image: url('img/digitalslider1.png'); 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center;"> <!--inline css-->
+                    <!-- headline foe the slider 4 -->
+                    <h1 class="headline" style="color: black; margin-left: 319px; margin-top: 20px; font-size: 46px;">Welcome to Our Watch Store!</h1>
+                    <p class="description" style="margin-left: 270px; color: #000000a8;"> <!--inline css-->
+                        <!-- this for the description for the slider 4 -->
+                        Timeless design meets modern durability – Casio watches offer precision, style, and
+                        reliability for every moment. <br>
+                    </p>
+                    <!-- this for the shop now button in the slider 4 through we can go directly to the product section  --> 
+                    <a href="index.html#products">
+                        <button class="cta-button" style="margin-left: 630px; margin-top: 470px;">Shop Now</button> <!--inline css-->
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="slide">
+                <div id="flex-container" style="background-image: url('img/analogwatchslider1.png'); 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center;"> <!--inline css-->
+                    <!-- headline foe the slider 5 -->
+                    <h1 class="headline" style="color: black; font-size: 46px; margin-top: 40px; margin-left: 300px;">Welcome to Our Watch Store!</h1>
+                    <!-- this for the description for the slider 5 -->
+                    <p class="description" style="margin-top: 115px; color: #00000080;"> <!--inline css-->
+                        Elegance and precision in every tick <br> Seiko watches blend <br> innovation with timeless
+                        <br> craftsmanship. <br>
+                    </p>
+                    <!-- this for the shop now button in the slider 5 through we can go directly to the product section  -->
+                    <a href="index.html#products">
+                        <button class="cta-button" style="margin-left: 650px; margin-top: 280px;">Shop Now</button> <!--inline css-->
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="slide">
+                <div id="flex-container" style="background-image: url('img/slideranother1.png'); 
+                    background-size: cover; 
+                    background-repeat: no-repeat; 
+                    background-position: center;"> <!--inline css-->
+                    <!-- headline foe the slider 6-->
+                    <h1 class="headline" style="color: black; margin-top: 37px; margin-left: 329px; font-size: 46px;">Welcome to Our Watch Store!</h1>
+                    <!-- this for the description for the slider 6 -->
+                    <p class="description" style="margin-top: 170px; margin-left: 134px; color: #00000080;"> <!--inline css-->
+    
+                        Classic charm with precise timekeeping <br> analog watches offer timeless <br> style for
+                        every occasion.
+                    </p>
+                    <!-- this for the shop now button in the slider 6 through we can go directly to the product section  -->
+                    <a href="index.html#products">
+                        <button class="cta-button" style="margin-left: 1000px; margin-top: 0px;">Shop Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows for the Slider -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button> <!-- Previous button -->
+        <button class="next" onclick="moveSlide(1)">&#10095;</button> <!-- Next button -->
+    </div>
+
+    <!-- Product Section -->
+    <div class="our-watches" id="products" style="margin-left: 200px;"> <!--inline css-->
+        <h1>Our watches</h1> <!-- Heading for the product section -->
+    </div>
+
+    <!-- Product Categories (Analog, Digital, Smart Watches) -->
+    <div class="flex-columns">
+        <!-- Analog Watches through which we can go the analog watches product section-->
+        <div class="flex-column">
+            <div class="text-content">
+                <h2>ANALOG WATCHES</h2>
+                <h3>Analog watches have a traditional design with hands on a dial. They are elegant, often powered
+                    by mechanical or quartz movement. Ideal for formal wear and collectors.</h3>
+                <a href="html/analog.html">
+                    <button class="column-button">Explore Collection</button> <!-- Button to explore analog watches -->
+                </a>
+            </div>
+            <img src="img/Citizen4.png" alt="Analog Watch" class="watch-image"> <!-- Image for analog watches -->
+        </div>
+
+        <!-- Digital Watches through which we can go the analog watches product section-->
+        <div class="flex-column">
+            <img src="img/Casio2.png" alt="Digital Watch" class="watch-image"> <!-- Image for digital watches -->
+            <div class="text-content" style="margin-left: 20px;">
+                <h2>DIGITAL WATCHES</h2>
+                <h3>Digital watches display time numerically on an LED or LCD screen. They often include alarms,
+                    stopwatches, and backlights. Perfect for sports and everyday use.</h3>
+                <a href="html/digital.html">
+                    <button class="column-button">Explore Collection</button> <!-- Button to explore digital watches -->
+                </a>
+            </div>
+        </div>
+
+        <!-- Smart Watches through which we can go the analog watches product section-->
+        <div class="flex-column">
+            <div class="text-content">
+                <h2>SMART WATCHES</h2>
+                <h3>Smartwatches feature touchscreens with smartphone connectivity. They offer fitness tracking,
+                    notifications, and apps. Best for tech-savvy and active users.</h3>
+                <a href="html/smart.html">
+                    <button class="column-button">Explore Collection</button> <!-- Button to explore smart watches -->
+                </a>
+            </div>
+            <img src="img/apple10.png" alt="Smart Watch" class="watch-image"> <!-- Image for smart watches -->
+        </div>
+    </div>
+
+    <!-- About Us Section in home page -->
+    <div class="home-about-us">
+        <h2>Meet Our Team</h2> <!-- Heading for the team section -->
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <a href="./html/asim CV.html">
+                    <img src="./img/asim.png" alt="Asim Pokherel - Team Member" /> <!-- Image for Asim -->
+                    <h3>Asim Pokherel</h3> <!--team member name-->
+                    <p>Team Leader</p>
+                </a>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <a href="./html/aditya CV.html">
+                    <img src="./img/aditya.png" alt="Aditya Uprety - Team Member" /> <!-- Image for Aditya -->
+                    <h3>Aditya Uprety</h3> <!--team member name-->
+                    <p>Team Member</p>
+                </a>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <a href="./html/nitya CV.html">
+                    <img src="img/nitya.png" alt="Nitya Yadav - Team Member" /> <!-- Image for Nitya -->
+                    <h3>Nitya Yadav</h3> <!--team member name-->
+                    <p>Team Member</p>
+                </a>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <a href="./html/Shisir Cv.html">
+                    <img src="img/sishir.png" alt="Shisir Satgaunwa - Team Member" /> <!-- Image for Shisir -->
+                    <h3>Shisir Chaudhary</h3> <!--team member name-->
+                    <p>Team Member</p>
+                </a>
+            </div>
+        </div>
+        <!-- this is short description of our team member-->
+        <p class="team-description">
+            Our team is a diverse group of talented individuals working together to bring innovative solutions to
+            life. Each member contributes their unique expertise to ensure the success of our projects and the
+            growth of individuals.
+        </p>
+    </div>
+
+    <!-- Blog and Research Sections in home pagge -->
+    <section class="home-sections">
+        <!-- Blog Section -->
+        <a href="./html/blog.html" class="section-card">
+            <div class="card-image blog-image"></div> <!-- Background image for the blog section -->
+            <div class="card-content">
+                <h2>Explore Our Blog</h2>
+                <p>Discover insights, stories, and latest updates about watch culture and technology</p>
+                <span class="cta-button">Read Articles</span> <!-- Call-to-action button -->
+            </div>
+        </a>
+
+        <!-- Research Section -->
+        <a href="./html/research.html" class="section-card">
+            <div class="card-image research-image"></div> <!-- Background image for the research section -->
+            <div class="card-content">
+                <h2>Research & Comparisons</h2>
+                <p>See how we innovate beyond industry standards in watch curation</p>
+                <span class="cta-button">View Studies</span> <!-- Call-to-action button -->
+            </div>
+        </a>
+    </section>
+
+    <!-- Contact Us Button -->
+    <div class="home-contact-us-button">
+        <a href="./html/contactUs.html">
+            <button>Contact Us</button> <!-- Button to navigate to the Contact Us page -->
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Links -->
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/aboutUs.html">About Us</a></li>
+                    <li><a href="html/blog.html">Blog</a></li>
+                    <li><a href="html/analog.html">Products</a></li>
+                    <li><a href="html/research.html">Research</a></li>
+                    <li><a href="html/contactUs.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="footer-section">
+                <h4>Payment Method</h4>
+                <div class="icons">
+                    
+                    <a href="https://esewa.com.np" target="_blank"> <!--through this we can go the esewa payment apps for the payments -->
+                        <img src="img/eswea.jpg" alt="eSewa Payment"> <!-- eSewa payment icon -->
+                    </a>
+                    <a href="https://khalti.com" target="_blank"><!--through this we can go the khalthi payment apps for the payments -->
+                        <img src="img/khalti.png" alt="Khalti Payment"> <!-- Khalti payment icon -->
+                    </a>
+                </div>
+            </div>
+
+            <!-- different Watch Categories we have in the website-->
+            <div class="footer-section">
+                <h4>Watches</h4>
+                <ul>
+                    <li><a href="html/analog.html">Analog Watches</a></li> <!--through this we can go the analog watches product page-->
+                    <li><a href="html/digital.html">Digital Watches</a></li><!--through this we can go the digital watches product page-->
+                    <li><a href="html/smart.html">Smart Watches</a></li><!--through this we can go the smart watches product page-->
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href="https://www.instagram.com" target="_blank"><!--through this we can go the our website instagram site -->
+                        <img src="img/insta.png" alt="Instagram"> <!-- Instagram icon -->
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank"><!--through this we can go the our website facebook site -->
+                        <img src="img/facebook.png" alt="Facebook"> <!-- Facebook icon -->
+                    </a>
+                    <a href="https://twitter.com" target="_blank"><!--through this we can go the our website twitter(X) site -->
+                        <img src="img/x.png" alt="Twitter (X)"> <!-- Twitter (X) icon -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright Notice -->
+        <p class="copyright">© 2025 Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Slider Functionality -->
+    <script>
+        let currentSlide = 0; // Tracks the current slide index
+
+        function moveSlide(step) {
+            const slides = document.querySelectorAll('.slide'); // Get all slides
+            currentSlide += step; // Update the current slide index
+            if (currentSlide >= slides.length) {
+                currentSlide = 0; // Loop back to the first slide
+            } else if (currentSlide < 0) {
+                currentSlide = slides.length - 1; // Loop to the last slide
+            }
+            document.getElementById('slider').style.transform = `translateX(${-currentSlide * 100}%)`; // Move the slider
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(() => moveSlide(1), 3000);
+    </script>
+</body>
+
+</html>
