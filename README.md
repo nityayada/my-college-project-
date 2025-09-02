@@ -1,2 +1,2 @@
 <h1>Watch E-Commerce Website</h1>
-<p>This project is a fully functional watch e-commerce website developed as part of my college coursework. It includes core e-commerce features like product browsing, cart management, and user authentication, built with modern web technologie.</p>
+<p>This project is a fully functional watch e-commerce website developed as part of my college coursework. It includes core e-commerce features like product browsing, cart management, and user authentication, built with modern web technologies.</p>
